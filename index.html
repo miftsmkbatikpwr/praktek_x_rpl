@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1</title>
+</head>
+<body>
+	<button onclick="tambah()">Tambah</button>
+	<p id="teks">0</p>
+	<button onclick="kurang()">Kurang</button>
+	<button onclick="reset()">RESET</button>
+	<p id="teks2"></p>
+	<script type="text/javascript">
+		let teksbaru = 0
+
+		function tambah() {
+			teksbaru += 10
+			document.getElementById('teks').innerHTML = teksbaru
+			document.getElementById('teks2').innerHTML = "TAMBAH"
+			document.getElementById('teks2').style.backgroundColor = "orange"
+		}
+
+		function kurang() {
+			teksbaru -= 10
+			document.getElementById('teks').innerHTML = teksbaru
+			document.getElementById('teks2').innerHTML = "KURANG"
+			document.getElementById('teks2').style.backgroundColor = "yellow"
+		}
+
+		function reset() {
+			teksbaru = 0
+			document.getElementById('teks').innerHTML = teksbaru
+			document.getElementById('teks2').innerHTML = "RESET"
+			document.getElementById('teks2').style.backgroundColor = "green"
+		}
+	</script>
+</body>
+</html>
